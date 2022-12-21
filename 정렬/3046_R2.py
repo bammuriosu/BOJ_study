@@ -1,5 +1,8 @@
-# (a + b) / 2 = c
-# 2c - a = b
+def a(years):
+    n = 0
+    for i in range(7):
+        n = n + ((i % years) * years * 30)
+    return(n)
 
-a, c = map(int, input().split())
-print(2*c - a)
+print(a(7))
+
