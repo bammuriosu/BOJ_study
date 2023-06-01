@@ -11,7 +11,7 @@ function solution(A,B){
     for(let i = 0; i<arr_length; i++){
         answer += A[i] * B[i];
     }
-
+이력서, react, typescript
     return answer;
 }
 
