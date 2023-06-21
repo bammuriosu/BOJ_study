@@ -1,5 +1,4 @@
 function solution(n, m, section) {
-    
     let arch = new Array(n);
 
     for (let i = 0; i < n; i++)
