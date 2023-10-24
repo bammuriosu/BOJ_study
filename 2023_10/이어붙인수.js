@@ -19,7 +19,6 @@ function solution(num_list) {
             numA+= num_list[i];
         else
             numB+= num_list[i];
-
     }
     return +numA + +numB;
 }
