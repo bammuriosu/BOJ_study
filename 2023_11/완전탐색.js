@@ -19,7 +19,7 @@ const input = [
   for (let i = 123; i <= 987; i++) {
     const temp = String(i);
     // 숫자는 중복될 수 없으며, 0 또한 존재할 수 없음 (ex. 131, 190, 200 등)
-    if (temp.includes('0') || temp[0] === temp[1] || temp[1] === [2] || temp[2] === temp[0]) continue;
+    if (temp.includes('0') || temp[0] === temp[1] || temp[1] == [2] || temp[2] === temp[0]) continue;
     answer.push(temp);
   }
   
