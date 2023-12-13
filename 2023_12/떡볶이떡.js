@@ -27,4 +27,3 @@ function binarySearch(arr, target, start, end) {
 
 // 15cm로 잘라줘야 손님이 원하는 6cm를 얻어갈 수 있음
 log(binarySearch(dduks, need, 0, Math.max(...dduks)));
-출처: https://nohack.tistory.com/137 [lucid_dream:티스토리]
