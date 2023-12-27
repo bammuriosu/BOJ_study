@@ -6,3 +6,8 @@ function solution(strArr) {
     }
     return answer;
 }
+
+//다른풀이
+function solution(strArr) {
+    return strArr.map((v, i) => i % 2 === 0 ? v.toLowerCase() : v.toUpperCase());
+}
