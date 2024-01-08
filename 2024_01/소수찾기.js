@@ -16,7 +16,7 @@ function isPrime(num) {
       if (selectNumber === 1) return arr.map((el) => [el]); 
       // n개중에서 1개 선택할 때(nP1), 바로 모든 배열의 원소 return. 1개선택이므로 순서가 의미없음.
   
-      arr.forEach((fixed, index, origin) => {
+      arr.forEach((fixed, index, origin) => {    //인자 : 요소, 그 요소의 인덱스, 원본배열 
         console.log("fixed:" + fixed);
         const rest = [...origin.slice(0, index), ...origin.slice(index+1)] 
         // 해당하는 fixed를 제외한 나머지 배열 
