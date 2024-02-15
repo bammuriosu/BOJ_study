@@ -1,4 +1,4 @@
-//조합은 중복허용 안함, nCr
+//조합은 순서 안따짐 1,2,3 이나 2,1,3이나 똑같이 1개로 침
 const getCombinations = function (arr, selectNumber) {
 	const results = [];
   	// 배열 중 1개를 선택하는 경우 모든 요소를 1개짜리 배열에 담아 return
