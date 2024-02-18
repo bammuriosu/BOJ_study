@@ -1,13 +1,13 @@
 
 
-let set = new Set();
+let set = new Set(); // 세트 : 배열과 비슷한 자료구조, 데이터를 순서없이 저장, 중복 허용안함
 numOfCase([1,7],'')
 function numOfCase(arr,str) {
 	if(arr.length) {
     	for(let i = 0; i <arr.length; i++) {
         	let copy = [...arr];
-          	copy.splice(i,1);
-          	numOfCase(copy,str + arr[i])
+          	copy.splice(i,1); //i번째에 하나 넣음
+          	numOfCase(copy,str + arr[i]); 재귀
         }
     }
   	if(str > 0) set.add(Number(str))
