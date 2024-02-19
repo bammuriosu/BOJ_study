@@ -5,7 +5,7 @@ const getCombinations = function (arr, selectNumber) {
   	if (selectNumber === 1) return arr.map((value) => [value]);
 	
   	// 1) 한 요소를 fixed한 후 나머지를 조합해서 붙인다.
-    arr.forEach((fixed, index, origin) => {
+    arr.forEach((fixed, index, origin) => {        //map함수 비슷한것, arr의 요소를 function에 적용시킨다. 리턴값없는게 map과의 차이점
        	// 2) fixed를 제외한 나머지 배열 구하기
       	const rest = origin.slice(index + 1);
       	// 3) 나머지 배열을 조합하기
