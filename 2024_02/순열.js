@@ -15,7 +15,7 @@ const getPermutations= function (arr, selectNumber) {
   // 4) fixed와 나머지 순열 합치기
   const attached = permutations.map((permutation) => [fixed, ...permutation]); // 돌아온 순열에 대해 떼 놓은(fixed) 값 붙이기
   // 5) 합친 순열을 배열에 추가
-  results.push(...attached);
+  results.push(...attached); //순열 요소 하나하나를 배열에 추가
 });
 
 return results;
