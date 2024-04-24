@@ -148,6 +148,7 @@ class Node {
       }
     }
   }
+
   const linkedList = new LinkedList();
   
   linkedList.insertFirst(100);
@@ -165,3 +166,15 @@ class Node {
   //linkedList.clearList();
   
   console.log(linkedList)
+  // 예시추가
+  const n1 = {
+    data: 100
+  }
+  
+  const n2 = {
+    data: 200
+  }
+  
+  n1.next = n2;
+  
+  console.log(n1) // { data: 100, next: { data: 200 } }
