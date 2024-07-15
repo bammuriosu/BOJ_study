@@ -7,7 +7,7 @@ print("x = {}, y = {}".format(x, y))  # 변수 출력
 
 
 # 여러 값 출력 시 값들 사이에 공백 들어감
-# print 함수문이 끝나면 개행 됨
+# print 함수문이 끝나면 행이 넘어감
 print("a","b","c")
 print("d","f","g")
 # a b c
@@ -16,7 +16,9 @@ print("d","f","g")
 # print문 출력시 맨 뒤에 붙는 것
 print("a","b","c", end="")
 print("a","b","c")
+print("a","b","c", end="\n")
 # a b ca b c
+# a b c
 
 print("a","b","c", end=" ")
 print("a","b","c")
